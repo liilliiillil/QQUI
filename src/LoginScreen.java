@@ -47,14 +47,14 @@ public class LoginScreen extends JFrame
         JPanel signinregister=new JPanel(new GridLayout(1,2,0,0));
         SignIn=new JButton("Sign in");
         Register=new JButton("Register");
-        SignIn.addActionListener(new ActionListener() {  //等待代码
+        SignIn.addActionListener(new ActionListener() {  //等待代码1
             @Override
             public void actionPerformed(ActionEvent e) {
                 new ChatScreen().setVisible(true);
             }
         });
         signinregister.add(SignIn);
-        Register.addActionListener(new ActionListener() { //等待代码
+        Register.addActionListener(new ActionListener() { //等待代码2
             @Override
             public void actionPerformed(ActionEvent e) {
                 new RegisterScreen().setVisible(true);
